@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | SkillBridge</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top" data-app-nav></nav>
+    <main class="container py-4">
+      <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+        <div>
+          <h1 class="h2 mb-1">Admin panel</h1>
+          <p class="text-secondary mb-0">Moderate listings, users and categories.</p>
+        </div>
+        <span class="badge text-bg-dark align-self-start"><i class="bi bi-shield-lock me-1"></i>admin only</span>
+      </div>
+
+      <div class="alert alert-warning d-none" data-config-alert role="alert"></div>
+      <div class="alert d-none" id="adminMessage" role="alert"></div>
+
+      <section class="row g-4 mb-4">
+        <div class="col-md-3">
+          <div class="stat-card"><i class="bi bi-people"></i><span id="usersCount">0</span><small>users</small></div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-card"><i class="bi bi-briefcase"></i><span id="listingsCount">0</span><small>listings</small></div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-card"><i class="bi bi-calendar2-check"></i><span id="bookingsCount">0</span><small>bookings</small></div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-card"><i class="bi bi-tags"></i><span id="categoriesCount">0</span><small>categories</small></div>
+        </div>
+      </section>
+
+      <div class="row g-4">
+        <section class="col-xl-8">
+          <div class="section-panel">
+            <h2 class="h4 mb-3">Listing moderation</h2>
+            <div class="table-responsive">
+              <table class="table align-middle">
+                <thead>
+                  <tr>
+                    <th>Service</th>
+                    <th>Status</th>
+                    <th>Owner</th>
+                    <th class="text-end">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="adminListings"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <section class="col-xl-4">
+          <div class="section-panel mb-4">
+            <h2 class="h4 mb-3">Add category</h2>
+            <form id="categoryForm" class="vstack gap-3">
+              <input class="form-control" id="categoryName" type="text" placeholder="Category name" required />
+              <input class="form-control" id="categorySlug" type="text" placeholder="category-slug" required />
+              <button class="btn btn-success" type="submit">
+                <i class="bi bi-plus-circle me-2"></i>Add
+              </button>
+            </form>
+          </div>
+          <div class="section-panel">
+            <h2 class="h4 mb-3">User roles</h2>
+            <div id="adminUsers" class="vstack gap-3"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="/src/js/pages/admin.js"></script>
+  </body>
+</html>

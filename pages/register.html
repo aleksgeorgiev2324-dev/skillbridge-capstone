@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | SkillBridge</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top" data-app-nav></nav>
+    <main class="auth-shell">
+      <section class="auth-panel shadow-sm">
+        <div class="mb-4">
+          <span class="badge text-bg-success mb-3">Create profile</span>
+          <h1 class="h3 mb-2">Join SkillBridge</h1>
+          <p class="text-secondary mb-0">Publish services or book trusted people in your area.</p>
+        </div>
+        <div class="alert alert-warning d-none" data-config-alert role="alert"></div>
+        <div class="alert d-none" id="registerMessage" role="alert"></div>
+        <form id="registerForm" class="vstack gap-3">
+          <div>
+            <label class="form-label" for="fullName">Full name</label>
+            <input class="form-control" id="fullName" type="text" minlength="2" required />
+          </div>
+          <div>
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control" id="email" type="email" autocomplete="email" required />
+          </div>
+          <div>
+            <label class="form-label" for="password">Password</label>
+            <input class="form-control" id="password" type="password" minlength="6" autocomplete="new-password" required />
+          </div>
+          <button class="btn btn-success btn-lg" type="submit">
+            <i class="bi bi-person-plus me-2"></i>Create account
+          </button>
+        </form>
+        <p class="mt-4 mb-0 text-secondary">Already registered? <a href="/pages/login.html">Login</a>.</p>
+      </section>
+    </main>
+    <script type="module" src="/src/js/pages/register.js"></script>
+  </body>
+</html>
