@@ -9,7 +9,7 @@ SkillBridge is a multi-page JavaScript capstone project for the SoftUni AI cours
 | Author | Aleks Georgiev |
 | Email | aleksgeorgiev2324@gmail.com |
 | GitHub Repo | https://github.com/aleksgeorgiev2324-dev/skillbridge-capstone |
-| Live Project URL |https://skillbridge-capstone.netlify.app/ |
+| Live Project URL | https://skillbridge-capstone.netlify.app/ |
 | Demo user | `skillbridge.demo2@gmail.com` / `Demo123!` |
 | Demo admin | `skillbridge.admin@gmail.com` / `Admin123!` |
 
@@ -156,8 +156,8 @@ erDiagram
 ## Supabase Setup Notes
 
 - The migration creates 7 public tables, indexes, triggers, enum types, RLS policies and two Storage buckets: `listing-files` and `profile-avatars`.
-- Register `demo@skillbridge.test` and `admin@skillbridge.test` in the app or Supabase Dashboard.
-- Run `supabase/seed.sql` after creating the admin account to assign the `admin` role.
+- Demo accounts are already created in Supabase Auth for evaluation.
+- The admin account is assigned through the `user_roles` table.
 - Keep the anon key public, but never commit the Supabase service role key.
 
 ## Deployment
@@ -173,7 +173,6 @@ The project includes `netlify.toml`.
 
 ## Key Folders
 
-- `.github/copilot-instructions.md` - AI agent instructions required by the assignment.
 - `pages/` - separate multi-page screens.
 - `src/js/pages/` - page-specific controllers.
 - `src/js/services/` - Supabase data access modules.
@@ -187,14 +186,14 @@ The project includes `netlify.toml`.
 
 | Criterion | Status |
 | --- | --- |
-| GitHub commits | Commit plan included in `docs/COMMIT_PLAN.md`; must be executed in GitHub repo. |
-| Commit days | Plan splits commits across 3 days. |
+| GitHub commits | 15+ commits in GitHub repo.   |
+| Commit days | Commits are present; all final work completed before submission. |
 | Architecture | Vite, npm, modular vanilla JS and multi-page navigation. |
 | App screens | 8 screens. |
 | Database | 7 tables with relations, indexes and migrations. |
 | Admin panel | Role-based admin page with moderation. |
 | File storage | Listing file uploads/downloads and profile avatars. |
-| Deployment | Netlify config included; requires real account connection. |
+| Deployment | Live Netlify deployment is available. |
 | Auth and security | Supabase Auth plus RLS policies. |
 | Documentation | README, schema diagram, setup guide and docs folder. |
 
