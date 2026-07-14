@@ -10,8 +10,8 @@ SkillBridge is a multi-page JavaScript capstone project for the SoftUni AI cours
 | Email | aleksgeorgiev2324@gmail.com |
 | GitHub Repo | https://github.com/aleksgeorgiev2324-dev/skillbridge-capstone |
 | Live Project URL |https://skillbridge-capstone.netlify.app/ |
-| Demo user | `demo@skillbridge.test` / `Demo123!` |
-| Demo admin | `admin@skillbridge.test` / `Admin123!` |
+| Demo user | `skillbridge.demo2@gmail.com` / `Demo123!` |
+| Demo admin | `skillbridge.admin@gmail.com` / `Admin123!` |
 
 The demo accounts must be created in Supabase Auth after the project is connected to a real Supabase project. See `supabase/seed.sql` for the admin role helper.
 
