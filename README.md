@@ -13,7 +13,7 @@ SkillBridge is a multi-page JavaScript capstone project for the SoftUni AI cours
 | Demo user | `skillbridge.demo2@gmail.com` / `Demo123!` |
 | Demo admin | `skillbridge.admin@gmail.com` / `Admin123!` |
 
-The demo accounts must be created in Supabase Auth after the project is connected to a real Supabase project. See `supabase/seed.sql` for the admin role helper.
+
 
 ## Features
 
