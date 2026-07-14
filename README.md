@@ -9,7 +9,7 @@ SkillBridge is a multi-page JavaScript capstone project for the SoftUni AI cours
 | Author | Aleks Georgiev |
 | Email | aleksgeorgiev2324@gmail.com |
 | GitHub Repo | https://github.com/aleksgeorgiev2324-dev/skillbridge-capstone |
-| Live Project URL |(https://skillbridge-capstone.netlify.app/) |
+| Live Project URL |https://skillbridge-capstone.netlify.app/ |
 | Demo user | `demo@skillbridge.test` / `Demo123!` |
 | Demo admin | `admin@skillbridge.test` / `Admin123!` |
 
