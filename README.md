@@ -197,3 +197,7 @@ The project includes `netlify.toml`.
 | Deployment | Netlify config included; requires real account connection. |
 | Auth and security | Supabase Auth plus RLS policies. |
 | Documentation | README, schema diagram, setup guide and docs folder. |
+
+## Submission Notes
+
+The project includes a Vite multi-page frontend, Supabase database schema, authentication, storage policies, admin panel, documentation and deployment configuration.
