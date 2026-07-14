@@ -1,0 +1,9 @@
+# Database Tables
+
+- `profiles` stores public user profile data.
+- `user_roles` stores normal/admin role assignments.
+- `service_categories` stores listing categories.
+- `listings` stores service offers.
+- `listing_files` stores metadata for uploaded files.
+- `booking_requests` stores customer booking requests.
+- `reviews` stores listing ratings and comments.
